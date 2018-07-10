@@ -6,3 +6,5 @@
 + hystrix-dashboard
 + turbine
 + turbine-amqp
++ feign
++ zuul
