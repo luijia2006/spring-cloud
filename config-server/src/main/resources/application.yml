@@ -1,0 +1,14 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-server
+Spring:
+  cloud:
+    config:
+      server:
+      git:
+        uri: https://github.com/luijia2006/
+        searchPaths: spring-cloud
+        username: luijia2006
+        password: mama620326
