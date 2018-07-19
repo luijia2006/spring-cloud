@@ -9,6 +9,6 @@ Spring:
       server:
       git:
         uri: https://github.com/luijia2006/
-        searchPaths: spring-cloud
+        searchPaths: spring-cloud/config-repo
         username: luijia2006
         password: mama620326
