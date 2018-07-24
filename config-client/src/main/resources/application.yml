@@ -1,0 +1,11 @@
+#server:
+#  port: 7002
+#spring:
+#  application:
+#    name: didispace
+#  cloud:
+#    config:
+#      profile: dev
+#      label: master
+#      uri: http://localhost:7001
+#

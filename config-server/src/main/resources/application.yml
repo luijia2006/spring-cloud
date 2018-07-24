@@ -3,12 +3,15 @@ server:
 spring:
   application:
     name: config-server
-Spring:
   cloud:
     config:
       server:
-      git:
-        uri: https://github.com/luijia2006/
-        searchPaths: spring-cloud/config-repo
-        username: luijia2006
-        password: mama620326
+        git:
+          uri: https://github.com/luijia2006/spring-cloud/
+          searchPaths: config-repo
+          username: luijia2006
+          password: mama620326
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/

@@ -1,5 +1,5 @@
 /*
-package com.example.configserver;
+package com.example.configclient;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ConfigServerApplicationTests {
+public class ConfigClientApplicationTests {
 
 	@Test
 	public void contextLoads() {
