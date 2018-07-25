@@ -4,12 +4,13 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>config-client</artifactId>
+	<artifactId>api-gateway-dynamic-filter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>config-client</name>
+	<name>api-gateway-dynamic-filter</name>
 	<description>Demo project for Spring Boot</description>
+
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -25,11 +26,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- 全栈web开发模块，包含嵌入式tomcat，SpringMvc-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
 		<!-- 通用测试模块，包含junit/hamcrest/mockito-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,7 +35,7 @@
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-starter-zuul</artifactId>
 		</dependency>
 
 		<dependency>
@@ -47,33 +43,16 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
-		<!-- 重试 -->
 		<dependency>
-			<groupId>org.springframework.retry</groupId>
-			<artifactId>spring-retry</artifactId>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
-
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.16.10</version>
 		</dependency>
-
 
 	</dependencies>
 
@@ -97,6 +76,7 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 
 
 </project>
