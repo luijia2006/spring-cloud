@@ -19,6 +19,7 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String hello() throws Exception {
+		logger.info("========call trace-2========");
 		ServiceInstance instance = client.getLocalServiceInstance();
 		//让处理线程睡眠几秒
 		/*int sleepTime=new Random().nextInt(3000);

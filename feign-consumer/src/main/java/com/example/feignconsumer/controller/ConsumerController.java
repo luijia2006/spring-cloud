@@ -22,6 +22,7 @@ public class ConsumerController {
 
 	@RequestMapping(value = "/feign-consumer",method = RequestMethod.GET)
 	public String helloConsumer() {
+		logger.info("========call trace-1========");
 		return helloService.hello();
 	}
 
