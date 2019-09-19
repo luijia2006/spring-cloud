@@ -72,11 +72,13 @@
                         123.207.4.93:5000表示仓库地址，
                         mir-docker表示镜像名，
                         1.0.0表示镜像版本，如果不指定，docker有该镜像名，版本号自动更替，没有版本号为latest-->
-					<imageName>172.16.1.62:5000/mir-eureka</imageName>
+					<imageName>172.16.1.62:5000/mir-eureka:0.0.1</imageName>
 					<!--基础镜像,相当于 Dockerfile 中的 from-->
-					<baseImage>java</baseImage>
+					<!--<baseImage>java</baseImage>-->
 					<!--入口点，容器启动时自动执行的命令-->
-					<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
+					<!--<entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>-->
+					<!-- 加载Dockerfile 文件-->
+					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 					<resources>
 						<resource>
 							<targetPath>/</targetPath>
